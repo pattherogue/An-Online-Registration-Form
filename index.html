@@ -7,30 +7,64 @@
 </head>
 <body>
     <header>
+        <!--Banner-->
         <p>The Code Review</p>
+        <!--Header-->
         <h1>Sign for our newsletter</h1>
         <p>Get the latest news on how your cide is doing right in your inbox</p>
     </header>
 
     <main>
         <form>
-            <label for="full-name">Full Name</label><br>
-            <input type="text" id="full-name" name="full-name" value="Required"><br>
-            <label for="email">Email Adress</label><br>
-            <input type="email" id="email" name="email" value="Required"><br>
-            <label for="phone-number">Phone Number</label><br>
-            <input type="tel" id="phone-number" name="phone-number" value=""><br>
-            <label for="street-address">Street Address</label><br>
-            <input type="text" id="street-address" name="street-address" value=""><br>
-            <label for="city">City</label><br>
-            <input type="text" id="city" name="city" value=""><br>
-            <label for="state">State</label><br>
-            <input list="state" value="Choose State">
-                <datalist id="state">
+            <fieldset>
+                <!--Contact Information-->
+                <legend>Contact Information</legend>
+                <label for="full-name">Full Name</label><br>
+                <input type="text" id="full-name" name="full-name" placeholder="Required" required><br>
+                <label for="email">Email Adress</label><br>
+                <input type="email" id="email" name="email" placeholder="Required" required><br>
+                <label for="phone-number">Phone Number</label><br>
+                <input type="tel" id="phone-number" name="phone-number"><br>
+                <label for="street-address">Street Address</label><br>
+                <input type="text" id="street-address" name="street-address"><br>
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="city"><br>
+                <label for="state">State</label><br>
+                <select id="states" name="states">
                     <option value="California">California</option>
-                    <option value="Nevada">Nevada</option>
                     <option value="Texas">Texas</option>
-                </datalist>
+                    <option value="Nevada">Nevada</option>
+                </select><br>
+                <label for="zip-code">Zip Code</label><br>
+                <input type="text" id="zip-code" name="zip-code">
+            </fieldset>
+            <br>
+            <fieldset>
+                <!--Newsletter-->
+                <legend>Newsletter</legend>
+                <label for="receive">Select the newsletters you would like to receive</label><br>
+                <input type="checkbox" id="html-news" name="news">
+                <label for="html-news">HTML News</label><br>
+                <input type="checkbox" id="css-news" name="news">
+                <label for="html-news">CSS News</label><br>
+                <input type="checkbox" id="javascript-news" name="news">
+                <label for="html-news">Javascript News</label><br>
+
+                <label for="format">Newsletter format</label><br>
+                <input type="radio" id="html" name="format">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="plain-text" name="format">
+                <label for="plain-text">Plain Text</label><br>
+
+                <!--Text Area-->
+                <label for="other-topics">Other topics you woudl like to hear about</label><br>
+                <textarea name="other-topics" id="other-topics" ></textarea><br>
+
+                <!--Submit Button-->
+                <input type="submit" value="Sign Up">
+
+                <p><em>Copyright The Code Review</em></p>
+            </fieldset>
          
          
 
