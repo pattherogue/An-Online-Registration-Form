@@ -3,15 +3,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <!--Banner-->
-        <p>The Code Review</p>
+        <p class="banner">The Code Review</p>
         <!--Header-->
-        <h1>Sign for our newsletter</h1>
-        <p>Get the latest news on how your cide is doing right in your inbox</p>
+        <div class="main-header">
+            <h1>Signup for our newsletter</h1>
+            <p>Get the latest news on how your cide is doing right in your inbox</p>
+        </div>
     </header>
 
     <main>
@@ -61,9 +64,10 @@
                 <textarea name="other-topics" id="other-topics" ></textarea><br>
 
                 <!--Submit Button-->
-                <input type="submit" value="Sign Up">
-
-                <p><em>Copyright The Code Review</em></p>
+                <div class="submit">
+                    <input type="submit" value="Sign Up" id="submit-button">
+                    <p><em>Copyright The Code Review</em></p>
+                </div>
             </fieldset>
          
          

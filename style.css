@@ -1,0 +1,57 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Header */
+.banner {
+    text-transform: uppercase;
+    color: white;
+    background-color:#036;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em 1em;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.main-header h1 {
+    display: flex;
+    font-size: 1.5em;
+    align-self: center;
+    padding-top: 22.5px;
+}
+
+.main-header p {
+    align-self: center;
+
+    height: 3em;
+    margin: 0 15px;
+    text-align: center;
+    padding-top: 7.5px;
+}
+
+/* Submit Button */
+.submit {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    align-items: center;
+}
+
+.submit p {
+    margin: 15px 0;
+}
+
+#submit-button {
+    background-color: lightseagreen;
+    color: white;
+    padding: 16px 32px;
+    width: 90%;
+    border-radius: 25px;
+}
