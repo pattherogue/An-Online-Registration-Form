@@ -17,11 +17,14 @@
         </div>
     </header>
 
+    <hr>
+    <hr>
+
     <main>
         <form>
-            <fieldset>
+            <fieldset class="contact">
                 <!--Contact Information-->
-                <legend>Contact Information</legend>
+                <legend><h2>Contact Information</h2></legend>
                 <label for="full-name">Full Name</label><br>
                 <input type="text" id="full-name" name="full-name" placeholder="Required" required><br>
                 <label for="email">Email Adress</label><br>
@@ -34,33 +37,94 @@
                 <input type="text" id="city" name="city"><br>
                 <label for="state">State</label><br>
                 <select id="states" name="states">
-                    <option value="California">California</option>
-                    <option value="Texas">Texas</option>
-                    <option value="Nevada">Nevada</option>
+                    <option disabled hidden selected>Choose State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
                 </select><br>
                 <label for="zip-code">Zip Code</label><br>
                 <input type="text" id="zip-code" name="zip-code">
             </fieldset>
-            <br>
-            <fieldset>
-                <!--Newsletter-->
-                <legend>Newsletter</legend>
-                <label for="receive">Select the newsletters you would like to receive</label><br>
-                <input type="checkbox" id="html-news" name="news">
-                <label for="html-news">HTML News</label><br>
-                <input type="checkbox" id="css-news" name="news">
-                <label for="html-news">CSS News</label><br>
-                <input type="checkbox" id="javascript-news" name="news">
-                <label for="html-news">Javascript News</label><br>
 
-                <label for="format">Newsletter format</label><br>
-                <input type="radio" id="html" name="format">
-                <label for="html">HTML</label><br>
-                <input type="radio" id="plain-text" name="format">
-                <label for="plain-text">Plain Text</label><br>
+            <hr id="second-hr">
+
+            <fieldset class="newsletter">
+                <!--Newsletter-->
+                <legend><h2>Newsletetter</h2></legend>
+                <label>Select the newsletters you would like to receive</label><br>
+                <div class="checkbox">
+                    <input type="checkbox" id="html-news" name="news" checked="checked">
+                    <label for="html-news">HTML</label><br>
+                    <input type="checkbox" id="css-news" name="news">
+                    <label for="html-news">CSS News</label><br>
+                    <input type="checkbox" id="javascript-news" name="news">
+                    <label for="html-news">Javascript News</label><br>
+                </div>
+                
+             
+
+                <br>
+
+                <div class="radio">
+                    <label>Newsletter format</label><br>
+                    <input type="radio" id="html" name="format">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" id="plain-text" name="format">
+                    <label for="plain-text">Plain Text</label><br>
+                </div>
+
+                <br>
 
                 <!--Text Area-->
-                <label for="other-topics">Other topics you woudl like to hear about</label><br>
+                <label>Other topics you woudl like to hear about</label><br>
                 <textarea name="other-topics" id="other-topics" ></textarea><br>
 
                 <!--Submit Button-->

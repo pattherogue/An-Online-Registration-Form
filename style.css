@@ -36,11 +36,71 @@
     padding-top: 7.5px;
 }
 
-/* Submit Button */
+/* Line Break */
+hr {
+    width: 95%;
+    margin-left: 0.5em;
+}
+
+#second-hr {
+    margin-top: 30px;
+}
+
+/* Contact Information */
+fieldset {
+    border: none;
+}
+.contact,
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    padding: 0 .5em;;
+}
+
+.contact input {
+    height: 4em;
+}
+
+.contact label,
+.newsletter label {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+.contact select {
+    font-size: 1.2em;
+    height: 3em;
+}
+
+.contact legend,
+.newsletter legend {
+    margin-bottom: 0.5em;
+    padding-top: 15px;
+}
+
+/* Newsletter */
+
+  
+
+.checkbox {
+ 
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+  
+ }
+
+ .radio {
+    
+     border: 1px solid red;
+ }
+
+ /* Submit */
 .submit {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     align-items: center;
 }
 
