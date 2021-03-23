@@ -50,6 +50,14 @@ hr {
 fieldset {
     border: none;
 }
+
+input,
+select,
+textarea {
+    background-color: lightgray;
+    border: none;
+}
+
 .contact,
 .newsletter {
     display: flex;
@@ -69,6 +77,10 @@ fieldset {
     margin-top: 0.5em;
 }
 
+.newsletter label {
+    margin-bottom: -0.75em;
+}
+
 .contact select {
     font-size: 1.2em;
     height: 3em;
@@ -80,21 +92,23 @@ fieldset {
     padding-top: 15px;
 }
 
+#zip-code {
+    width: 40%;
+}
+
 /* Newsletter */
 
-  
-
-.checkbox {
- 
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-  
+.checkbox, 
+.radio,
+.checkbox input,
+.radio input {
+     margin: 10px 0;
  }
 
- .radio {
+ input::placeholder {
+     text-align: end;
+     width: 95%;
     
-     border: 1px solid red;
  }
 
  /* Submit */
