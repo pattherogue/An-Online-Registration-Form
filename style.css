@@ -58,6 +58,19 @@ textarea {
     border: none;
 }
 
+.contact-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-flex input,
+select  {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 12px 0;
+}
+
 .contact,
 .newsletter {
     display: flex;
@@ -129,3 +142,44 @@ textarea {
     width: 90%;
     border-radius: 25px;
 }
+
+/* Media Queries */
+@media (max-width:425px) {
+  
+    
+}
+@media (min-width:768px ) {
+    .desktop-container {
+        margin: 0 10em;
+        padding-top: 30px;
+    }
+
+    .contact-flex {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .contact-flex label {
+        width: 40%;
+    }
+
+    #zip-code {
+        max-width: 25%;
+        margin-right: 47%;
+    }
+
+    .contact,
+    .newsletter {
+        margin: 1.5em 1.5em;
+    }
+
+    .contact h2 {
+        padding-bottom: 15px;
+    }
+
+    #other-topics {
+        padding-bottom: 15px;
+    }
+
+  
