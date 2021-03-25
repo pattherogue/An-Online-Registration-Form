@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Merriweather', serif;
 }
 
 /* Header */
@@ -71,6 +72,11 @@ select  {
     margin: 12px 0;
 }
 
+input::placeholder {
+    text-align: end;
+    width: 95%;  
+}
+
 .contact,
 .newsletter {
     display: flex;
@@ -118,11 +124,9 @@ select  {
      margin: 10px 0;
  }
 
- input::placeholder {
-     text-align: end;
-     width: 95%;
-    
- }
+ #other-topics {
+    padding-bottom: 15px;
+}
 
  /* Submit */
 .submit {
@@ -143,11 +147,15 @@ select  {
     border-radius: 25px;
 }
 
-/* Media Queries */
-@media (max-width:425px) {
-  
-    
+input:focus,
+textarea:focus,
+select:focus {
+	background-color: lightslategray;
+    border: 2px solid lightslategray;
+	
 }
+
+/* Media Queries */
 @media (min-width:768px ) {
     .desktop-container {
         margin: 0 10em;
@@ -178,8 +186,5 @@ select  {
         padding-bottom: 15px;
     }
 
-    #other-topics {
-        padding-bottom: 15px;
-    }
-
+}
   
