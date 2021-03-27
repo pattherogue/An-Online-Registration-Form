@@ -168,7 +168,7 @@ select:focus {
     .contact-flex {
         display: flex;
         flex-direction: row;
-
+        align-items: center;
     }
 
     .contact-flex label {
