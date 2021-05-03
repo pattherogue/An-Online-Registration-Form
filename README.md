@@ -1,5 +1,5 @@
 # Online-Registration-Form
- Third Treehouse Project
+Unit 03 Project
 
 In this project, I have built a responsive, mobile-friendly registration form using a wide variety of HTML form input ypes and attributes.
 
